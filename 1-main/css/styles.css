@@ -1,15 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+/* 
 html ,body {
 
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
+} */
+a {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    color: #363636;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #363636;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #363636;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #626262;
 }
 /* Klasser */
+
+.slab {
+    font-family: 'Robot Slab', serif;
+}
+
 .topmenu {
      border: 1px solid #707070;
      width: 100%;
@@ -50,9 +82,7 @@ html ,body {
 }
 
 .logo {
-
     width: 50%;
-
 }
 
 
@@ -60,6 +90,7 @@ html ,body {
     width: 50%;
     text-align: end;
     margin-top: 2rem;
+   
 
 }
 
@@ -67,6 +98,8 @@ html ,body {
 
     text-decoration: none;
     color: #363636;
+    font-family: 'Robot slab' serif;
+    font-size: 1.3rem;
     padding: 1rem;
     
 }
@@ -77,39 +110,51 @@ html ,body {
 
 }
 
-.showcase {
-  
-    display: grid;
-
-    
+.scfigure {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    border: none;
+    width: 50%;
 }
 
-.imgshowcase {
+.flavor {
+    width: 50%;        
+    }
 
-  z-index: 2;
-
-}
-
-.btn-about {
+.btn{
     border: none;
     background-color: #25E6C8;
     color: #fff;
     padding: 1rem 3.5rem 1rem;
     border-radius: 10%;
+    font-size: 1rem;
 
 }
 
-.btn-about:hover {
+.btn:hover {
 
 background-color: #2BAAEC;
 
 }
 
+.btn-about {
+    margin-top: 0.5rem;
+}
 
-#flavor {
 
-    z-index: 1;
+#showcase {
+    border: none;
+    background: #dedede;    
+    background-size: cover;  
+}
 
+#showcase .container {
+    display: flex;
+    align-items: center;
+}
+
+#showcase .container .scfigure svg {
+    height: 50vh;
 }
 
 
