@@ -5,12 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* 
-html ,body {
 
-    font-family: 'Roboto', sans-serif;
+/* html ,body {} */
 
-} */
 a {
     font-family: 'Roboto Slab', serif;
 }
@@ -33,7 +30,7 @@ h3 {
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 18px;
     color: #626262;
 }
 /* Klasser */
@@ -158,6 +155,52 @@ background-color: #2BAAEC;
 }
 
 
+/* ABOUT US */
+#about .container {
+    margin-top: 10rem;
+}
+
+#about .container .text {
+    width: 50%;
+    margin-top: 5rem;
+    
+}
+
+#about .container .text h1 span {
+    color: #2BAAEC;
+}
+
+.about-header h1 {
+    margin-bottom: 1rem;
+  
+}
+
+.about-header {
+    border-bottom: 3px solid #25E6C8 ;
+}
+
+.about-body {
+    margin-top: 3rem;
+}
+
+.figure {
+    margin-left: 20%;
+}
+
+.about-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.about-stats h1 {
+    color: #2BAAEC;    
+}
+
+.about-stats p {
+    font-family: 'Robot Slab', serif;
+    font-size: 1.3rem;
+}
 /* Media Queries */
 
 /* @media (min-width: 576px) { ... }
