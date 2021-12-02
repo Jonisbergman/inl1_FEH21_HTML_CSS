@@ -6,7 +6,9 @@
     box-sizing: border-box;
 }
 
-/* html ,body {} */
+html ,body {
+    scroll-behavior: smooth;
+}
 
 a {
     font-family: 'Roboto Slab', serif;
@@ -144,12 +146,13 @@ display: flex;
 .scfigure {
     margin-bottom: 0;
     margin-top: 1rem;
+    margin-left: 10%;
     border: none;
     width: 50%;
 }
 
 .flavor {
-    width: 50%;        
+    width: 60%;        
     }
 
 .btn{
@@ -177,7 +180,7 @@ background-color: #2BAAEC;
 #showcase {
     border: none;
     width: 100%;
-    background: #dedede;    
+    /* background: #dedede;     */
     background-size: cover;  
     height: 74.2vh;
   
@@ -186,13 +189,17 @@ background-color: #2BAAEC;
 #showcase .container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #dedede;
+    width: 100%;
     
    
 }
-
+/* 
 #showcase .container .scfigure svg {
-    object-fit: contain;
-}
+    object-fit: cover;
+} */
 
 
 
@@ -200,10 +207,11 @@ background-color: #2BAAEC;
 
 #about {
     display: flex;
+    padding-top: 6rem;
 }
 
 #about .container {
-    margin-top: 10rem;
+    /* margin-top: 2rem; */
     width: 50%;
 }
 
@@ -248,6 +256,9 @@ background-color: #2BAAEC;
 
 #services {
     background-color: #F7F7F7;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+    
 }
 
 
@@ -328,7 +339,9 @@ background-color: #2BAAEC;
 
 
 #appointment {
-    background-color: #2BAAEC;
+    background-color: #2ba8ece1;
+
+
 }
 
 #appointment h3 {
@@ -338,38 +351,80 @@ background-color: #2BAAEC;
 }
 
 #appointment .container {
-    
-    
+    justify-content: space-between;   
+    align-items: center; 
     display: flex;
+    padding: 4rem;
+    
 }
 
-.btn-appoint {
-  
+.btn-appoint {  
     border-radius: 10px;
     color: #2BAAEC;
     background-color: #fff;
     font-weight: bold;
+    border: 2px solid #fff;
+  
 }
 
 .btn-appoint:hover {
     color: #fff;
     background-color: #2BAAEC;
     border: 2px solid #fff;
+   
+}
+  
+
+#footer {
+    background-color: #2BAAEC;
+}
+
+#footer p {
+    color: #F3FBFF;
+    opacity: 60%;
+    font-size: 16px;
+}
+
+.footer-text {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Media Queries */
 
-/* @media (min-width: 576px) { ... }
+@media (max-width: 576px) { 
+/* .scfigure {
+    display: none;
+}
+.figure {
+    display: none;
+} */
+.topmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.hours {
+    margin: auto;
+    width: 100%;
+    /* padding: 10rem; */
+}
 
+.social {
+ 
+ 
 
-@media (min-width: 768px) { 
-    .container {
+}
+}
+ 
+@media (max-width: 768px) { 
 
-        max-width: 80%;
+/*  */
+} 
+ 
+@media (max-width: 992px) { 
+/*  */
 
-    }
- }
-
-@media (min-width: 992px) { ... }
-
-
+}
